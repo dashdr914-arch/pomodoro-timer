@@ -1,0 +1,179 @@
+/* Rajdhani font code */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pomodoro-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer-section {
+    width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.timer-display {
+    margin-bottom: 20px;
+}
+
+.time {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #f8f8f8;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a5a5a;
+}
+
+#startBtn {
+    background-color: #2e7d32;
+}
+
+#startBtn:hover {
+    background-color: #3d8b40;
+}
+
+#resetBtn {
+    background-color: #d32f2f;
+}
+
+#resetBtn:hover {
+    background-color: #e53935;
+}
+
+#skipBtn {
+    background-color: #1565c0;
+}
+
+#skipBtn:hover {
+    background-color: #1976d2;
+}
+
+.session-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
+
+.preset-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.preset-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.progress-section {
+    width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.progress-chart {
+    display: flex;
+    height: 150px;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.chart-bar {
+    flex: 1;
+    background-color: #4a4a4a;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    transition: height 0.3s ease;
+}
+
+.chart-bar.work {
+    background-color: #2e7d32;
+}
+
+.chart-bar.break {
+    background-color: #1565c0;
+}
+
+.chart-label {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+h2 {
+    margin-top: 0;
+    color: #f8f8f8;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    width: 100%;
+}
